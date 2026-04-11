@@ -10,10 +10,13 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@maz-ui/nuxt": "^4.9.0",
     "@pinia/nuxt": "^0.11.3",
     "@tailwindcss/vite": "^4.1.15",
-    "@vueform/nuxt": "^1.24.0",
+    "@vueform/nuxt": "^1.28.0",
+    "@vueuse/core": "^14.2.1",
     "bcryptjs": "^3.0.3",
+    "gsap": "^3.14.2",
     "html-to-text": "^9.0.5",
     "jsonwebtoken": "^9.0.2",
     "lucide-vue-next": "^0.554.0",
@@ -23,8 +26,14 @@
     "pinia": "^3.0.4",
     "sequelize": "^6.37.7",
     "tailwindcss": "^4.1.15",
+    "v-dialogs": "^3.1.1",
+    "v-page": "^3.5.0",
     "vue": "^3.5.22",
+    "vue-easy-lightbox": "^1.19.0",
     "vue-router": "^4.6.3",
     "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "sass": "^1.89.0"
   }
 }
