@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme{ 
+    --color-dagi: teal;
+    --color-gold-50: #fbf8f1;	/*Very light backgrounds*/ 
+    --color-gold-100: #f5edd9;	/*Subtle highlights*/ 
+    --color-gold-200: #eaddb6;	/*Decorative borders*/ 
+    --color-gold-300: #dec48d;	
+    --color-gold-400: #d3aa62;	/*Hover states (Light)Primary Brand Gold (Buttons/Icons)*/ 
+    --color-gold-500: #cb9243;	/*Primary Brand Gold (Buttons/Icons)*/ 
+    --color-gold-600: #af7436;	/*Darker Gold (Text/Hover)*/ 
+    --color-gold-700: #8d572e;	
+    --color-gold-800: #74462a;	
+    --color-gold-900: #603a26;	
+
+    --color-stone-900: #1c1917; /*Dark Backgrounds */
+    --color-stone-600: #57534e; /*Body Text */
+    --color-stone-50: #fafaf9; /*Light Backgrounds*/
+    --color-stone-300: #e7e5e4; /*Light Backgrounds*/
+}
+
+
+@layer components{
+    .test{
+        @apply text-2xl font-bold underline bg-dagi text-amber-200;
+    }
+    .input { @apply w-full border border-stone-300 p-3 outline-none focus:border-gold-500; }
+    .btn-dark { @apply bg-stone-900 text-white px-8 py-3 uppercase font-bold hover:bg-gold-600; }
+    .btn-gold { @apply bg-gold-600 text-white py-4 uppercase font-bold hover:bg-gold-500; }
+}
+

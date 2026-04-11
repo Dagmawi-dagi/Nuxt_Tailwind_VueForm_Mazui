@@ -1,0 +1,9 @@
+@use './variables' as *;
+
+html {
+  font-size: var(--maz-base-font-size);
+  font-family: var(--maz-font-family);
+  background-color: hsl(var(--maz-background));
+  color: hsl(var(--maz-foreground));
+  scroll-behavior: smooth;
+}
