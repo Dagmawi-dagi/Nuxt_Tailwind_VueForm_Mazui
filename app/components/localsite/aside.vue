@@ -57,7 +57,7 @@ const sideBarNavs = ref([
 </script>
 
 <template>
-    <div class=" container maz-bg-background " :class="{ position:  tablet || mobilePhone , open: sideBarOpen, close: !sideBarOpen  }"  >
+    <div class="bg-white dark:bg-gray-800 container" :class="{ position:  tablet || mobilePhone , open: sideBarOpen, close: !sideBarOpen  }"  >
       <div class="userContainer" >
           <MazAvatar :src="`/users/${loggedInUser?.avatar}`" 
           :caption="loggedInUser?.userName"
@@ -97,7 +97,17 @@ const sideBarNavs = ref([
    </div> 
     </div>
 
-
+    <div class="bg-white dark:bg-gray-800 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5">
+      <div>
+        <span class="inline-flex items-center justify-center rounded-md bg-indigo-500 p-2 shadow-lg">
+          <button>asdasd asdasd</button>
+        </span>
+      </div>
+      <h3 class="text-gray-900 dark:text-white mt-5 text-base font-medium tracking-tight ">Writes upside-down</h3>
+      <p class="text-gray-500 dark:text-gray-400 mt-2 text-sm ">
+        The Zero Gravity Pen can be used to write in any orientation, including upside-down. It even works in outer space.
+      </p>
+    </div>  
 
     <span class="sideNavToggler"  @click="sideBarOpen = !sideBarOpen"  >
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">

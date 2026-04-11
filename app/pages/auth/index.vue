@@ -100,5 +100,5 @@ const login = async (data, form$)=>{
   </div>
 </template>
 <style lang="scss" scoped>
-@use '/assets/style/auth/login.scss' as *;
+@use '/assets/style/scss/auth/login.scss' as *;
 </style>
