@@ -124,6 +124,14 @@ useResizableColumns(tableRef, {
     </template>
   </MazTable>
 
+    <!-- Hero -->
+    <div class="bg-stone-900 dark:bg-amber-200 dark:text-black text-white py-24 text-center pt-40">
+      <h1 class="text-5xl font-serif mb-4">Our Story</h1>
+      <p class="text-stone-400 max-w-xl mx-auto px-6">
+        A century of excellence in the heart of the mountains.
+      </p>
+    </div>
+
 </template>
 
 <style scoped lang="scss">

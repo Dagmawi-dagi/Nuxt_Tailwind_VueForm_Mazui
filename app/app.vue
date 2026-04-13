@@ -1,6 +1,7 @@
 <script setup>
 const { global_vue_easy_lightbox,any_open_modal } = useUtilStore()
 const { onhide } = useLightBox()
+use_set_theme()
 
 </script>
 

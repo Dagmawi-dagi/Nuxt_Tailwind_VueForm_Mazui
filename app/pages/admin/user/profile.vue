@@ -337,7 +337,7 @@ const logout = async()=>{
 <style scoped lang="scss">  
 @use "@/assets/style/scss/variables" as *;
 @use "@/assets/style/scss/mixins" as *;
-@use "@/assets/style/global.scss" as *;
+// @use "@/assets/style/global.scss" as *;
 
 .container{
     margin: 0 1rem;

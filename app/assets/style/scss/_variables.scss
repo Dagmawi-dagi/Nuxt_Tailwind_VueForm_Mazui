@@ -39,7 +39,7 @@ $zindex-localsite-side-nav: 99;
   --border-light-blue :#{$border-light-blue};
 }
 
-[darkTheme=true]{
+[class='dark']{
   --bg-white: #{$bg-dark-blue};
   --bg-light-blue:#{$bg-dark-blue2};
 

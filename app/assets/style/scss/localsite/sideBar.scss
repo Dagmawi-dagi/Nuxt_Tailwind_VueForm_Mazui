@@ -1,6 +1,5 @@
-@use "@/assets/style/scss/variables" as *;
-@use "@/assets/style/scss/mixins" as *;
-
+@use "../variables" as *;
+@use "../mixins" as *;
 
 .container {
   position: relative;
@@ -17,15 +16,15 @@
 
   &.open {
     transform: translateX(0);
-    transition:
-      transform 0.5s ease-in-out,
-      background-color 0.2s ease-in-out,
-      color 0.2s ease-in-out;
+    // transition:
+    //   transform 0.5s ease-in-out,
+    //   background-color 0s ease-in-out,
+    //   color 0s ease-in-out;
   }
 
   &.close {
     transform: translateX(-100%);
-    transition: all 0.8s ;
+    // transition: all 0.8s ;
     & + .sideNavToggler {
       right: calc(100vw - 25px);
       left: 0;
@@ -39,7 +38,7 @@
 }
 
 .sideNavToggler {
-  @include transition($prop: (left: 0.5s));
+  // @include transition($prop: (left: 0.5s));
   @include flexbox;
   background-color: var(--light-blue);
   color: var(--text-dark-gray);
@@ -61,7 +60,7 @@
 }
 
 .user{
-  @include transition($prop: onlytheme);
+  // @include transition($prop: onlytheme);
   display: flex;
   flex-direction: column;
   font-size: 85%;

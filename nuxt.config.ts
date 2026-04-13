@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   ssr:true,
   compatibilityDate: '2025-07-15',
   devtools: { enabled: false },
-  css: ['~/assets/style/css/main.css'],
+  css: ['~/assets/style/css/main.css','~/assets/style/scss/main.scss'],
   modules: ['@pinia/nuxt','@vueform/nuxt','@maz-ui/nuxt'],
 
   vite:{
