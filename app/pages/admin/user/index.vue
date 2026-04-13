@@ -2,7 +2,8 @@
 import { MazTrash,MazPlus,MazPencil } from '@maz-ui/icons'
 
 definePageMeta({
-    layout:"localsite",
+    layout:"lc",
+    // layout:"localsite",
     name: 'users',
     // middleware:['auth']
 })

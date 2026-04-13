@@ -55,7 +55,7 @@ export default defineNuxtConfig({
   },
   app:{
     head:{
-      title: 'nuxt_tail_vueform_mazui'
+      title: 'nuxt_tail_vueform_mazuii'
     }
   }
 })
