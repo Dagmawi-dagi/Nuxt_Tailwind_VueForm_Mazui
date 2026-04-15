@@ -7,7 +7,7 @@ export const use_set_theme = ()=>{
   onBeforeMount(() => {
     if (localStorage.getItem('theme') == 'dark') {
       document.documentElement.classList.add('dark')
-      theme.value = 'dark'
+      // theme.value = 'dark'
 
     }
   })
@@ -17,7 +17,7 @@ export const use_set_theme = ()=>{
   const setTheme = ()=>{
     document.documentElement.classList.toggle('dark')
     localStorage.setItem('theme',document.documentElement.classList)
-      theme.value = 'dark'
+      // theme.value = 'dark'
     
   }
 

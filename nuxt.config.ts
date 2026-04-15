@@ -2,11 +2,10 @@
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
-  ssr:false,
-  compatibilityDate: '2025-07-15',
+  ssr:true,
   devtools: { enabled: false },
   css: ['~/assets/style/css/main.css'],
-  modules: ['@pinia/nuxt','@vueform/nuxt','@maz-ui/nuxt','@vueuse/nuxt'],
+  modules: ['@pinia/nuxt','@vueform/nuxt','@maz-ui/nuxt'],
 
   vite:{
     plugins:[

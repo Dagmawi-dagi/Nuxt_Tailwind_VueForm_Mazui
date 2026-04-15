@@ -81,6 +81,7 @@ useResizableColumns(tableRef, {
     hoverable
     background-even
     selected-key="id"
+    rounded-size="No"
     :headers="[
       { label:'Doc id', key: 'id', align: 'center', classes: 'selection-column trancate',sortable: true },
       { label:'userName', key: 'userName' ,classes:'trancate'},
