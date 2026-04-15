@@ -3,7 +3,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme{ 
- --color-crm-dark: #111111;
+
+  --color-crm-dark: #111111;
   --color-crm-sidebar: #141414;
   --color-crm-border: #262626;
   --color-crm-accent: #d900d9;
@@ -36,18 +37,22 @@
     .input { @apply w-full border border-stone-300 p-3 outline-none focus:border-gold-500; }
     .btn-dark { @apply bg-stone-900 text-white px-8 py-3 uppercase font-bold hover:bg-gold-600; }
     .btn-gold { @apply bg-gold-600 text-white py-4 uppercase font-bold hover:bg-gold-500; }
-    body {
-        @apply bg-crm-dark text-white antialiased;
-    }
+
 }
 
+@layer base {
+  body {
+    @apply bg-crm-dark text-white antialiased;
+  }
+}
+
+
 @layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
   .scrollbar-hide {
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
-  .scrollbar-hide::-webkit-scrollbar {
-    display: none;
-  }
 }
-

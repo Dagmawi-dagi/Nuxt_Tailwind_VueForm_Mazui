@@ -6,7 +6,8 @@ import { defineConfig } from '@vueform/vueform'
 
 // You might place these anywhere else in your project
 // for now just use the vue form with no dark theme so import the css file below 
-import '@vueform/vueform/dist/vueform.nodark.css';
+// import '@vueform/vueform/dist/vueform.nodark.css';
+import '@vueform/vueform/dist/vueform.css';
 
 export default defineConfig({
   theme: vueform,

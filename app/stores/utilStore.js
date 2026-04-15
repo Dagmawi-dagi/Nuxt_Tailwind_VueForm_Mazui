@@ -17,9 +17,12 @@ export const useUtilStore = defineStore('utilStore',()=>{
 
   const sideBarOpen = ref(true)
 
+  const theme = ref('')
+
   return{
     any_open_modal,
     global_vue_easy_lightbox,
     sideBarOpen,
+    theme
   }
 })
