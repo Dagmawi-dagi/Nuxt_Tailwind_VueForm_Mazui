@@ -159,7 +159,7 @@ const handleMouseLeave = () => {
 <template>
   <aside
     ref="sidebarRef"
-    class="h-screen bg-crm-sidebar dark:bg-amber-200 dark:text-amber-950 border-r border-crm-border flex flex-col sticky top-0 z-40 overflow-visible"
+    class="h-screen bg-crm-sidebar border-r border-crm-border flex flex-col sticky top-0 z-40 overflow-visible"
     :style="{ width: isCollapsed ? '64px' : '240px' }"
   >
     <!-- Header -->
@@ -170,7 +170,7 @@ const handleMouseLeave = () => {
         :class="{ 'justify-center': isCollapsed }"
       >
         <div v-if="header.logo" class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center shrink-0 overflow-hidden">
-          <img :src="header.logo" :alt="header.title" class="w-8 h-8 object-contain" referrerPolicy="no-referrer" />
+          <img src="assets/image/rodas-logo" :alt="header.title" class="w-8 h-8 object-contain" referrerPolicy="no-referrer" />
         </div>
         <div v-else class="w-10 h-10 rounded-lg bg-crm-accent flex items-center justify-center shrink-0">
           <span class="text-white font-bold">{{ header.title.charAt(0) }}</span>
