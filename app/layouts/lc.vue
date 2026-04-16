@@ -87,24 +87,24 @@ const crmSidebar = reactive({
 });
 
 onMounted(() => {
-  if (containerRef.value) {
-    const tl = gsap.timeline();
+  // if (containerRef.value) {
+  //   const tl = gsap.timeline();
     
-    tl.from(containerRef.value.querySelector('header'), {
-      y: -20,
-      opacity: 0,
-      duration: 0.6,
-      ease: 'power3.out'
-    });
+  //   tl.from(containerRef.value.querySelector('header'), {
+  //     y: -20,
+  //     opacity: 0,
+  //     duration: 0.6,
+  //     ease: 'power3.out'
+  //   });
     
-    tl.from(containerRef.value.querySelectorAll('.animate-item'), {
-      y: 30,
-      opacity: 0,
-      duration: 0.8,
-      stagger: 0.1,
-      ease: 'power3.out'
-    }, '-=0.4');
-  }
+  //   tl.from(containerRef.value.querySelectorAll('.animate-item'), {
+  //     y: 30,
+  //     opacity: 0,
+  //     duration: 0.8,
+  //     stagger: 0.1,
+  //     ease: 'power3.out'
+  //   }, '-=0.4');
+  // }
 });
 </script>
 

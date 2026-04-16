@@ -54,8 +54,7 @@ onMounted(() => {
 <template>
   <button
     @click="toggleDark()"
-    class="relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-crm-accent focus:ring-offset-2 bg-crm-border"
-    :class="{ 'bg-crm-accent': isDark }"
+    class="relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-300 ease-in-out focus:outline-none bg-crm-border"
   >
     <span class="sr-only">Toggle theme</span>
     <span

@@ -159,7 +159,7 @@ const handleMouseLeave = () => {
 <template>
   <aside
     ref="sidebarRef"
-    class="h-screen bg-crm-sidebar border-r border-crm-border flex flex-col sticky top-0 z-40 overflow-visible"
+    class="h-screen bg-crm-sidebar dark:bg-amber-200 dark:text-amber-950 border-r border-crm-border flex flex-col sticky top-0 z-40 overflow-visible"
     :style="{ width: isCollapsed ? '64px' : '240px' }"
   >
     <!-- Header -->
